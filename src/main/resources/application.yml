@@ -1,6 +1,11 @@
-server:
-  port : 8081
-
 spring:
   application:
     name: "greeting-svc-b"
+
+server:
+  port : 8081
+  tomcat:
+    mbeanregistry:
+      enabled: true
+
+
